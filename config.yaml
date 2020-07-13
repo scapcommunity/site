@@ -1,0 +1,52 @@
+title: "SCAP"
+baseURL: https://scapcommunity.github.io/site/
+defaultContentLanguage: en
+languages:
+  en:
+    lang: en
+    languageName: English
+    weight: 1
+MetaDataFormat: "yaml"
+theme: "hugo-uswds"
+canonifyurls: true
+enableGitInfo: true
+pygmentsCodeFences: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsUseClasses: true
+markup:
+  goldmark:
+    extensions:
+      typographer: false
+    renderer:
+      unsafe: true
+  highlight:
+    guessSyntax: true
+params:
+  header:
+    project_shortname: "SCAP"
+    project_name: "SCAP Community"
+  contentRepoPath: https://github.com/scapcommunity/site/tree/master/content
+  searchAffiliate: scap
+menu:
+  secondary:
+  - name: Github
+    url: https://github.com/scapcommunity/site
+    weight: 90
+module:
+  mounts:
+  - source: content
+    target: content
+  - source: static
+    target: static
+  - source: ../content
+    target: static/artifacts/content
+  - source: layouts
+    target: layouts
+  - source: data
+    target: data
+  - source: assets
+    target: assets
+  - source: i18n
+    target: i18n
+  - source: archetypes
+    target: archetypes

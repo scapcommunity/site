@@ -1,0 +1,3 @@
+[submodule "themes/hugo-uswds"]
+	path = themes/hugo-uswds
+	url = https://github.com/usnistgov/hugo-uswds.git
